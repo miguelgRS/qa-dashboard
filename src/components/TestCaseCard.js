@@ -19,7 +19,7 @@ export default function TestCaseCard({ test, comment }) {
         const trimmed = rawPath.replace(/^[\\/]+/, '');
         const normalized = trimmed.replace(/[\\/]+/g, '/');
         const relPath = normalized.replace(/^screenshots\/?/, '');
-        screenshotUrls.push(`/screenshots/${relPath}`);
+        screenshotUrls.push(process.env.PUBLIC_URL + '/screenshots/' + relPath);
       });
     } catch (e) {
       console.warn('Error parseando context de screenshot:', e);
