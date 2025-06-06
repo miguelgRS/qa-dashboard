@@ -36,7 +36,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.com/miguelgRS/qa-dashboard",
+  "homepage": "https://miguelgRS.github.io/qa-dashboard",
   "eslintConfig": {
     "extends": [
       "react-app",
