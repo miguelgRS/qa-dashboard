@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/miguelgRS/qa-dashboard/static/css/main.c948154c.css",
+    "main.js": "/miguelgRS/qa-dashboard/static/js/main.aaa7509e.js",
+    "index.html": "/miguelgRS/qa-dashboard/index.html",
+    "main.c948154c.css.map": "/miguelgRS/qa-dashboard/static/css/main.c948154c.css.map",
+    "main.aaa7509e.js.map": "/miguelgRS/qa-dashboard/static/js/main.aaa7509e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c948154c.css",
+    "static/js/main.aaa7509e.js"
+  ]
+}
