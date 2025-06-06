@@ -23,7 +23,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    fetch('/data/combined-report.json')
+    fetch(process.env.PUBLIC_URL + '/data/combined-report.json')
       .then(res => res.json())
       .then(json => {
         setStats(json.stats);
@@ -50,11 +50,11 @@ function App() {
         setGroupedTests(groupedByFeature);
       });
 
-    fetch('/data/ai-comments.json')
+    fetch(process.env.PUBLIC_URL + '/data/ai-comments.json')
       .then(res => res.json())
       .then(json => setComments(json));
 
-    fetch('/data/summary-report.json')
+    fetch(process.env.PUBLIC_URL + '/data/summary-report.json')
       .then(res => res.json())
       .then(json => setSummaryReport(json));
   }, []);
@@ -105,7 +105,7 @@ function App() {
       {/* left side bar (icons) */}
       <aside className="w-28 self-stretch px-2 py-4 bg-white border-r border-black/10 inline-flex flex-col justify-between items-center text-[10px] font-medium text-slate-900">
         <div className="flex flex-col items-center gap-2">
-          <img src="/revstarlogo.jpg" alt="Logo" className="w-10 h-10" />
+          <img src={process.env.PUBLIC_URL + "/revstarlogo.jpg"} alt="Logo" className="w-10 h-10" />
           <div className="text-center">
             <p className="text-xs font-semibold leading-tight">QA Automation</p>
             <p className="text-xs tracking-widest text-slate-600">DASHBOARD</p>
